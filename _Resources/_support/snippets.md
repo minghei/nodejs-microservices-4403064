@@ -21,6 +21,8 @@ Run `docker pull redis` followed by `docker run --name redis -p 7379:6379 -d red
 ### Install and run Redis Commander
 Make sure you have installed it with `npm install -g redis-commander` then run `redis-commander --redis-port=7379`.
 
+docker pull jaegertracing/all-in-one
+
 ## Start Jaeger in Docker
 ```sh
 docker run --name jaeger \
@@ -28,7 +30,7 @@ docker run --name jaeger \
   -p 16686:16686 \
   -p 4317:4317 \
   -p 4318:4318 \
-  -d jaegertracing/all-in-one:1.45
+  -d jaegertracing/all-in-one
 ```
 UI: http://localhost:16686
 
